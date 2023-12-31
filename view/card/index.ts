@@ -59,12 +59,6 @@ function initInput(type: 'a' | 'c' | 'h' | 'l'): HTMLInputElement {
       case 'decrease':
         value = value - step
         break
-      case 'setMaximum':
-        value = max
-        break
-      case 'setMinimum':
-        value = min
-        break
     }
 
     let parsedValue = bindedClamp(value, { max, min })
